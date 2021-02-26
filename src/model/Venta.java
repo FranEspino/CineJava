@@ -2,6 +2,7 @@ package model;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.scene.input.MouseEvent;
 
 import java.sql.*;
 import java.util.Date;
@@ -63,7 +64,7 @@ public class Venta {
         this.hora_inicio = hora_inicio;
     }
 
-    public ObservableList<Venta> getDirectors() {
+    public ObservableList<Venta> getVentas() {
         ObservableList<Venta> obs = FXCollections.observableArrayList();
 
         try{

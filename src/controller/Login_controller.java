@@ -57,7 +57,7 @@ public class Login_controller implements Initializable {
 //SEGUNDO commit FRAPO
     @FXML
     private void click(ActionEvent event) {
-        System.out.println("dsfsdfsdf");
+
         if(tf_email.getText().length() ==0 || pf_password.getText().length() ==0  ){
             JOptionPane.showMessageDialog(null,"Porfavor llenar todos los campos.");
 
@@ -83,8 +83,6 @@ public class Login_controller implements Initializable {
                             stage.show();
                             Stage mystage = (Stage) this.Iniciar_Sesion.getScene().getWindow();
                             mystage.close();
-
-
 
                         } catch (IOException e) {
                             e.printStackTrace();

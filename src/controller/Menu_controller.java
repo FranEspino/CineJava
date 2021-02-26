@@ -63,8 +63,10 @@ public class Menu_controller implements Initializable {
         Image image2 = new Image("resources/user.png");
         usericon.setImage(image2);
 
+
         Venta v = new Venta();
-        ObservableList<Venta> items = v.getDirectors();
+        ObservableList<Venta> items = v.getVentas();
+
         this.Table_venta.setItems(items);
         this.colum_cliente.setCellValueFactory(new PropertyValueFactory("nombre_cliente"));
         this.colum_pelicula.setCellValueFactory(new PropertyValueFactory("titulo_peli"));
@@ -104,9 +106,12 @@ public class Menu_controller implements Initializable {
             Scene scene = new Scene(root);
             Stage stage = new Stage();
 
+
+
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.setScene(scene);
             stage.showAndWait();
+
 
         } catch (IOException e) {
             e.printStackTrace();
